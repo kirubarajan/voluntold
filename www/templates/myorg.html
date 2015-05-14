@@ -1,0 +1,59 @@
+<ion-view title="Organizations" hide-nav-bar="false">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-clear" ng-click="list()">
+      My List
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="add()">
+      New
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="backing-teal" style="text-align: center;">
+
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" placeholder="Search" ng-model="input.query">
+        </label>
+        <button class="button button-clear" ng-click="search()">
+          <i class="icon ion-ios-search"></i>
+        </button>
+      </div>
+
+    </div>
+
+
+    <h1 class = "text"> {{helperText}} </h1>
+    <p class = "text"> {{helperText2}} </p>
+
+    <div class="list">
+
+      <div ng-repeat="organization in organizations">
+
+        <div class="padding">
+
+          <a class="item item-thumbnail-left" ng-click="about(organization)">
+            <img src="{{organization.avatar}}">
+            <h2>{{organization.name}}</h2>
+
+            <h4 style="color:grey;">{{organization.description}}</h4>
+            <p> {{organization.size}} </p>
+            <h2> <strong> {{organization.location}} </h3>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

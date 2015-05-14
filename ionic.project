@@ -1,0 +1,12 @@
+{
+  "name": "Voluntold",
+  "app_id": "b40cca9a",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

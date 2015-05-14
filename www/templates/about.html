@@ -1,0 +1,52 @@
+<ion-view title="About" hide-nav-bar="false">
+
+  <ion-nav-buttons side="primary">
+    <button class="button button-clear" ng-click="back()">
+      Back
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding backing-blue"  style="text-align: center;">
+    <h1 class="text">  </h1>
+
+    <div class="list card">
+
+      <div class="item">
+        <h2>{{org.name}}</h2>
+        <p>{{org.location}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-src={{org.image}}>
+        <p style="text-align: left;">
+          {{org.description}}
+          <br>
+          <br>
+          <br>
+        </p>
+        <h2>{{org.size}}</h2>
+
+      </div>
+
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="mailto:{{org.email}}">
+          <i class="icon ion-thumbsup"></i>
+          Contact
+        </a>
+
+        <a class="tab-item" href="{{org.website}}">
+          <i class="icon ion-share"></i>
+          Website
+        </a>
+
+        <a class="tab-item" ng-click="add(org)">
+          <i class="icon ion-plus-round"></i>
+          Add to My List
+        </a>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-view title="Results" hide-nav-bar="false">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-clear" ng-click="back()">
+      Back
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding backing-green" style="text-align: center;">
+
+    <h1 class="text"> {{sorry}} </h1>
+
+    <div class="list">
+
+      <div ng-repeat="organization in results">
+
+        <div class="padding">
+
+          <a class="item item-thumbnail-left" ng-click="about(organization)">
+            <img ng-src="{{organization.avatar}}">
+            <h2>{{organization.name}}</h2>
+
+            <h4 style="color:grey;">{{organization.description}}</h4>
+            <p> {{organization.size}} </p>
+            <h2> <strong> {{organization.location}} </h3>
+
+            <br>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

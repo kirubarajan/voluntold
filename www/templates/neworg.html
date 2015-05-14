@@ -1,0 +1,61 @@
+<ion-view title="New Organization" hide-nav-bar="false">
+
+  <ion-nav-buttons side="left">
+
+    <button class="button button-clear" style="text-align: left" ng-click="back()">
+        Back
+    </button>
+
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+
+    <button class="button button-clear" style="text-align: left" ng-click="save()">
+      Save
+    </button>
+
+  </ion-nav-buttons>
+
+  <ion-content class="padding backing" has-header = true>
+
+    <div class="list card">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Organization Name</span>
+        <input type="text" placeholder="e.g. Aspiring Youth" ng-model="org.name">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Avatar</span>
+        <input type="text" placeholder="http://aspiringyouth.ca/assets/images/icon.png" ng-model="org.avatar">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Description Image</span>
+        <input type="text" placeholder="e.g. https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/t31.0-8/11154686_432124766912796_1114928883784384353_o.jpg" ng-model="org.image">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Location</span>
+        <input type="text" placeholder="e.g. Mississauga, Ontario" ng-model="org.location">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Description</span>
+        <input type="text" placeholder="e.g. a nonprofit organization that..." ng-model="org.description"> <br> <br>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Size</span>
+        <input type="text" placeholder="e.g. 75+ members in 2 cities" ng-model="org.size">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="e.g. contact@aspiringyouth.ca" ng-model="org.email">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Website</span>
+        <input type="text" placeholder="e.g. aspiringyouth.ca" ng-model="org.website">
+      </label>
+
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

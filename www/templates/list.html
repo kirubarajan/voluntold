@@ -1,0 +1,36 @@
+<ion-view title="My List" hide-nav-bar="false">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-clear" ng-click="back()">
+      Back
+    </button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="share()">
+      Share
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding backing-purple" style="text-align: center;">
+
+      <div ng-repeat="organization in list">
+
+        <div class="card">
+          <div class="item item-divider">
+            {{organization.name}}
+          </div>
+          <div class="item item-text-wrap" ng-click="about(organization)">
+            {{organization.website}} <br> {{organization.email}}
+          </div>
+          <div class="item item-divider">
+            {{organization.location}}
+          </div>
+        </div>
+
+      </div>
+
+
+
+  </ion-content>
+</ion-view>
